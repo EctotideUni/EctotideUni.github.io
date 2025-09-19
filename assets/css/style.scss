@@ -1,0 +1,88 @@
+---
+---
+
+@import 'jekyll-theme-hacker';
+
+footer {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-top: 1px dashed #a075ce; //header;
+    padding: 20px 0;
+    margin: 0 0 0px 0;
+}
+
+header {
+    border-bottom: 1px dashed #a075ce; //header;
+}
+
+footer h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0 0 0 -40px;
+    font-weight: bold;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(181, 232, 83, 0.1),
+    0 0 10px rgba(181, 232, 83, 0.1);
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+    @include media-max-width($container-max-width) {
+        margin-left: 0;
+    }
+}
+
+.container {
+    width:90%;
+    max-width:1000px;
+    margin:0 auto
+}
+
+header h1:before {
+    content: "";
+}
+
+header h1 {
+    color: #a075ce;//$header;
+    margin: 0 0 0 0px;
+
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+
+body>footer {
+    position:sticky;
+    top:100vh
+}
+
+body {
+    margin:0;
+    padding:0;
+    background:#151515 url("../images/bkg.png") 0 0;
+    color:#eaeaea;
+    font-size:16px;
+    line-height:1.5;
+    font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
+}
+
+.btn-github .icon {
+    opacity:1;
+    background:url("../images/blacktocat.png") 0 0 no-repeat
+}
+
+.btn-linkedin .icon {
+    opacity:1;
+    background:url("../images/linkedin_icon.png") 0 0 no-repeat
+}
+.btn-bsky .icon {
+    opacity:1;
+    background:url("../images/bsky_icon.png") 0 0 no-repeat
+}
+.btn-email .icon {
+    opacity:1;
+    background:url("../images/email_icon.png") 0 0 no-repeat
+}

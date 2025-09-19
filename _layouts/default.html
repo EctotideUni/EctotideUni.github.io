@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-GB" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+
+{% seo %}
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+
+        <section id="links">
+          <a href="https://github.com/{{ site.github_username }}" class="btn btn-github"><span class="icon"></span>GitHub</a>
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="btn btn-linkedin"><span class="icon"></span>LinkedIn</a>
+          <a href="https://bsky.app/profile/{{ site.bsky_username }}" class="btn btn-bsky"><span class="icon"></span>Bluesky</a>
+          <a href="mailto://{{ site.email }}" class="btn btn-email"><span class="icon"></span>Email</a>
+        </section>
+      </div>
+    </footer>
+
+  </body>
+</html>
