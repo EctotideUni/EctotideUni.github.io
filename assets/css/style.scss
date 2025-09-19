@@ -54,6 +54,11 @@ header h2 {
     color: #666;
 }
 
+
+html, body {
+    min-height: 100vh;
+}
+
 body>footer {
     position:sticky;
     top:100vh

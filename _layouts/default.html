@@ -19,6 +19,14 @@
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
+      <section>
+
+      <a href="/about/">About Me</a>
+      <a href="portfolio.html"><s>Portfolio</s></a>
+      <a href="blog.html"><s>Blog</s></a>
+
+      </section>
+
       </div>
     </header>
 
@@ -31,12 +39,23 @@
     <footer>
       <div class="container">
 
-        <section id="links">
+        <section id="links" style="margin: auto; width: 50%">
           <a href="https://github.com/{{ site.github_username }}" class="btn btn-github"><span class="icon"></span>GitHub</a>
           <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="btn btn-linkedin"><span class="icon"></span>LinkedIn</a>
           <a href="https://bsky.app/profile/{{ site.bsky_username }}" class="btn btn-bsky"><span class="icon"></span>Bluesky</a>
           <a href="mailto://{{ site.email }}" class="btn btn-email"><span class="icon"></span>Email</a>
         </section>
+
+        <section id="webring" style="margin: auto; width: 50%">
+          <p>Abertay CGAD 2022-2026 Webring To Go Here</p>
+        </section>
+
+        <section id="hosting" style="margin: auto; width: 70%">
+
+          <p>&copy Copyright 2025 Lily McEwan. Powered by <a href="https://jekyllrb.com/">Jekyll</a> with modified <a href="https://github.com/pages-themes/hacker">Hacker</a> theme. Hosted by <a href="https://pages.github.com/">GitHub Pages.</a> </p>
+
+        </section>
+
       </div>
     </footer>
 
