@@ -6,13 +6,13 @@
 footer {
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-top: 1px dashed #a075ce; //header;
+    border-top: 1px dashed #9999cc; //footer line;
     padding: 20px 0;
     margin: 0 0 0px 0;
 }
 
 header {
-    border-bottom: 1px dashed #a075ce; //header;
+    border-bottom: 1px dashed #9999cc; //header;
 }
 
 footer h1 {
@@ -43,7 +43,7 @@ header h1:before {
 }
 
 header h1 {
-    color: #a075ce;//$header;
+    color: #9999cc;
     margin: 0 0 0 0px;
 
 }
@@ -52,6 +52,10 @@ header h2 {
     font-size: 18px;
     font-weight: 300;
     color: #666;
+}
+
+body h1, h2, h3 {
+	color: #9999cc;
 }
 
 
@@ -74,6 +78,14 @@ body {
     font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
 }
 
+.multiline {
+  white-space: pre-line;
+}
+
+
+//
+// Buttons for the footer
+//
 .btn-github .icon {
     opacity:1;
     background:url("../images/blacktocat.png") 0 0 no-repeat
@@ -83,11 +95,18 @@ body {
     opacity:1;
     background:url("../images/linkedin_icon.png") 0 0 no-repeat
 }
+
 .btn-bsky .icon {
     opacity:1;
     background:url("../images/bsky_icon.png") 0 0 no-repeat
 }
+
 .btn-email .icon {
     opacity:1;
     background:url("../images/email_icon.png") 0 0 no-repeat
+}
+
+.btn-itch .icon {
+    opacity:1;
+    background:url("../images/itch_icon.png") 0 0 no-repeat
 }
