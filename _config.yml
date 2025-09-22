@@ -22,7 +22,7 @@ title: Lily McEwan's Portfolio
 author: Lily McEwan
 email: work@ectotide.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Scottish Games Programming Student (Website Heavy WIP)
+  Scottish Games Programming Student
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 bsky_username: ghostlywaterlily.bsky.social
