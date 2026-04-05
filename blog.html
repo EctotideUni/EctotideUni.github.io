@@ -1,18 +1,27 @@
 ---
 layout: default
+permalink: /blog/
+title: Blog
 ---
 
-<div class="home">
+<div class="blog">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
+  <p class="multiline">
+
+    Sometimes I have things to ramble about, whether it's events I've been to, or a game I've just played and have a lot of thoughts on, sometimes I'll put those thoughts here.
+
+  </p>
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for category in site.categories -%}
+      {%- unless category[0] == "projects" -%}
+		  {%- for post in category[1] -%}
+      
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -26,9 +35,11 @@ layout: default
         {%- endif -%}
       </li>
       {%- endfor -%}
+      {%- endunless -%}
+      {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
 
 </div>

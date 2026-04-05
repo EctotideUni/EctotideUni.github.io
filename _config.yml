@@ -29,6 +29,8 @@ bsky_username: ghostlywaterlily.bsky.social
 linkedin_username: ghostlywaterlily
 github_username:  ectotideUni
 itch_username: ectotide
+show_excerpts: true
+excerpt_separator: <!--more-->
 
 
 # # Build settings
