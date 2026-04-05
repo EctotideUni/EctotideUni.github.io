@@ -1,0 +1,34 @@
+---
+title: Default Project
+subtitle: This should not be seen
+image_link: none
+git_link: none
+itch_link: none
+---
+
+<article class="post">
+
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h3>{{ page.subtitle }}</h3>
+
+    <div class="post-content">
+        <p class="multiline">
+        {{- content }}
+        </p>
+    </div>
+
+    {% unless page.image_link == "none" %}
+    <div>
+        <img src="{{ page.image_link }}" style="width: 50%">
+    </div>
+    {% endunless %}
+
+    {% unless page.git_link == "none" %}
+    <a href="{{ page.git_link }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+    {% endunless %}
+
+    {% unless page.itch_link == "none" %}
+    <a href="{{ page.itch_link }}" class="btn btn-itch"><span class="icon"></span>View on Itch</a>
+    {% endunless %}
+
+</article>
