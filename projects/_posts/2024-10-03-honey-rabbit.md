@@ -5,7 +5,7 @@ subtitle: Cutesy Collection Platformer
 image_link: /assets/images/projects/honey rabbit.png
 git_link: https://github.com/CassieParticles/FresherJam2024
 itch_link: https://azaersyss.itch.io/honey-rabbit
-youtube_link: none
+youtube_id: none
 ---
 
 A game jam game made over the course of a week using Unity. I was a programmer in a team of 6.

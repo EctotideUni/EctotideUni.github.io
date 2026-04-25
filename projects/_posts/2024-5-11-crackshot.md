@@ -3,7 +3,7 @@ layout: project
 title: Crackshot
 subtitle: PS5 Fighting Game
 image_link: none
-youtube_link: https://www.youtube.com/watch?v=MHV_oHkMiUc
+youtube_id: MHV_oHkMiUc
 git_link: https://github.com/Abertay-University-SDI/gameapp-coursework-208-touch-grass-gaming
 itch_link: none
 ---

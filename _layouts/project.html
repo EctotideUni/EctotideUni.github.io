@@ -4,7 +4,7 @@ subtitle: This should not be seen
 image_link: none
 git_link: none
 itch_link: none
-youtube_link: none
+youtube_id: none
 ---
 
 <article class="post">
@@ -25,7 +25,7 @@ youtube_link: none
 	<br>
     {% endunless %}
 	
-	{% unless page.youtube_link == "none" %}
+	{% unless page.youtube_id == "none" %}
 	<!-- Code taken from https://github.com/dommmel/jekyll-youtube since github pages isn't playing nicely with the plugin -->
 	<div style="width: 50%">
 		<style>
@@ -48,7 +48,7 @@ youtube_link: none
 			}
 		</style>
 		<div class='embed-container'>
-			<iframe title="YouTube video player" width="640" height="390" src={{ page.youtube_link }} frameborder="0" allowfullscreen></iframe>
+			<iframe title="YouTube video player" width="640" height="390" src="https://www.youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 	<br>
