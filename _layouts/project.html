@@ -4,6 +4,7 @@ subtitle: This should not be seen
 image_link: none
 git_link: none
 itch_link: none
+youtube_link: none
 ---
 
 <article class="post">
@@ -18,9 +19,17 @@ itch_link: none
     </div>
 
     {% unless page.image_link == "none" %}
-    <div>
-        <img src="{{ page.image_link }}" style="width: 50%">
+    <div style="width: 50%">
+        <img src="{{ page.image_link }}">
     </div>
+	<br>
+    {% endunless %}
+	
+	{% unless page.youtube_link == "none" %}
+    <div style="width: 50%">
+        {% youtube page.youtube_link %}
+    </div>
+	<br>
     {% endunless %}
 
     {% unless page.git_link == "none" %}
